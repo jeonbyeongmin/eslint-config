@@ -1,5 +1,5 @@
 module.exports = {
-  parser: '@typescript-eslint/parser',
+  parser: require.resolve('@typescript-eslint/parser', { paths: [process.cwd()] }),
   extends: ['plugin:@typescript-eslint/recommended'],
   plugins: ['@typescript-eslint'],
   settings: { 'import/resolver': { typescript: {} } },
