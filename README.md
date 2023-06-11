@@ -23,10 +23,8 @@ yarn add --dev @jeonbyeongmin/eslint-config eslint
 
 ```json
 {
-   "extends: "@jeonbyeongmin/prettier-config",
-   "overrides": {
-      ...
-   }
+   "extends": "@jeonbyeongmin/prettier-config",
+   "overrides": {}
 }
 ```
 
@@ -34,9 +32,7 @@ yarn add --dev @jeonbyeongmin/eslint-config eslint
 
 ```json
 {
-   "extends: "@jeonbyeongmin/prettier-config/react"
-   "overrides": {
-      ...
-   }
+   "extends": "@jeonbyeongmin/prettier-config/react"
+   "overrides": {}
 }
 ```
