@@ -13,8 +13,10 @@ And if your `package.json` includes `typescript` in `devDependencies`, it also a
 npm install --save-dev @jeonbyeongmin/eslint-config eslint
 ```
 
+If you use yarn berry, you have to install [@rushstack/eslint-patch]([@rushstack/eslint-patch](https://yarnpkg.com/package/@rushstack/eslint-patch)) too. Check this [issues](https://github.com/yarnpkg/berry/issues/8#issuecomment-681069562)
+
 ```bash
-yarn add --dev @jeonbyeongmin/eslint-config eslint
+yarn add --dev @jeonbyeongmin/eslint-config eslint @rushstack/eslint-patch
 ```
 
 ### Usage
@@ -23,16 +25,25 @@ yarn add --dev @jeonbyeongmin/eslint-config eslint
 
 ```json
 {
-  "extends": "@jeonbyeongmin/eslint-config",
-  "overrides": {}
+  "extends": "@jeonbyeongmin/eslint-config", 
+  "overrides": []
 }
 ```
-
-2. If you use React, create `.eslintrc.json` file in your project root directory.
-
 ```json
 {
    "extends": "@jeonbyeongmin/eslint-config/react"
-   "overrides": {}
+   "overrides": []
 }
 ```
+
+2. If you use yarn berry, you have to use `js` format. And import `@rushstack/eslint-patch` like this.
+```js
+require('@rushstack/eslint-patch/modern-module-resolution');
+
+module.exports = {
+  extends: '@jeonbyeongmin/eslint-config',
+  overrides: []
+};
+
+```
+
