@@ -1,6 +1,6 @@
 {
   "name": "@jeonbyeongmin/eslint-config",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "main": "index.js",
   "files": [
     "index.js",
@@ -8,6 +8,7 @@
     "configs",
     "utils"
   ],
+  "license": "MIT",
   "scripts": {
     "sort": "npx sort-package-json",
     "lint": "eslint .",
