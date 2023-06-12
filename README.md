@@ -23,8 +23,8 @@ yarn add --dev @jeonbyeongmin/eslint-config eslint
 
 ```json
 {
-   "extends": "@jeonbyeongmin/eslint-config",
-   "overrides": {}
+  "extends": "@jeonbyeongmin/eslint-config",
+  "overrides": {}
 }
 ```
 
